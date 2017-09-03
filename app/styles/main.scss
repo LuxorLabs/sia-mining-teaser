@@ -1,0 +1,144 @@
+// bower:scss
+// endbower
+
+$light: #F3F3F3;
+$offblack: #252525;
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 721px;
+  color: $light;
+  background: linear-gradient(-45deg, #2C9158 0%, #4DF07E 100%);
+}
+
+.hero--content {
+  z-index: 3;
+}
+
+#hero-bg {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+
+#hero--logo {
+  margin: 40px auto;
+}
+
+#hero--title {
+  font-size: 35px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+#hero--subtitle{
+  display: inline-block;
+  width: 35%;
+  min-width: 300px;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+#hero--input {
+background: rgba(111,212,145,0.72);
+border-radius: 5px;
+height: 50px;
+width: 250px;
+border: none;
+padding-left: 20px;
+padding-right: 20px;
+color: $light;
+line-height: 30px;
+&::placeholder {
+  color: $light;
+}
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  background: linear-gradient(-45deg, #2C9158 0%, #4DF07E 100%);;
+}
+
+.btn {
+  border: 1px solid $light;
+  border-radius: 5px;
+  background: transparent;
+  color: $light;
+  padding: 20px 40px;
+  line-height: 0;
+  &:hover {
+    color: $offblack;
+  }
+}
+
+
+
+section.desc {
+  display: flex;
+  .imagebg {
+    position: relative;
+    background: $offblack;
+    padding: 0;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);;
+    }
+  }
+  .text {
+    padding: 50px; 
+    max-width: 700px;   
+  }
+  .desc--header {
+    font-size: 24px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  .desc--header::before {
+    content: "";
+    display: block;
+    margin-bottom: 40px;
+    width: 80px;
+    height: 1px;
+    background: #3EC56D;
+  }
+  .desc--content {
+    line-height: 1.8;
+    font-size: 16px;
+  }
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+@media screen and (min-width: 920px) {
+  section.desc {
+    .text {
+      padding: 100px; 
+    }
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  background: $offblack;
+  height: 60px;
+  color: $light;
+}
+
+
+@media screen and (min-width: 1220px) {
+  section.desc {
+    .text {
+      padding: 150px; 
+    }
+  }
+}
+
