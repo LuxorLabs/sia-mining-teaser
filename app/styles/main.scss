@@ -61,8 +61,13 @@ line-height: 30px;
 .about {
   display: flex;
   align-items: center;
-  height: 200px;
-  background: linear-gradient(-45deg, #2C9158 0%, #4DF07E 100%);;
+  min-height: 200px;
+  background: #2C9158;
+}
+
+blockquote {
+  color: $light;
+  font-size: 15px;
 }
 
 .btn {
@@ -122,6 +127,17 @@ section.desc {
 
 .reverse {
   flex-direction: row;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.abt {
+  margin-left: auto;
 }
 
 @media screen and (min-width: 920px) {
