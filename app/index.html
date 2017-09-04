@@ -5,9 +5,8 @@
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>frontend</title>
+  <title>Luxor Mining Pool</title>
 
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
   <!-- build:css styles/vendor.css -->
@@ -22,6 +21,7 @@
 
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <!-- endbuild -->
 </head>
 
@@ -32,13 +32,17 @@
   <section id="hero">
     <div class="container grid-xl hero--content">
       <div class="columns">
-        <div class="column col-12 text-center">
+        <div class="column col-12 text-center hero--text">
           <img id="hero--logo" src="/images/sia-logo.png" alt="sia-logo" class="img-responsive">
-          <h1 id="hero--title">The world's first mining pool<br/> made to support developers</h1>
+          <h1 id="hero--title">The world's first mining pool made to support developers</h1>
           <span id="hero--subtitle">Join to be part of a new pool that donates back to the developer community.</span>
         </div>
         <div class="column col-12 text-center">
-          <input id="hero--input" placeholder="Email Address" type="email"><i class="form-icon icon icon-check"></i>
+          <form action="//tech.us16.list-manage.com/subscribe/post?u=c5764441bee95ad13ff6e80c5&amp;id=b4c5848278" method="post">
+            <input id="hero--input" name="EMAIL" placeholder="Email Address" type="email" required>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c5764441bee95ad13ff6e80c5_b4c5848278" tabindex="-1" value=""></div>
+            <button type="submit" class="btn btn-outline">Sign Up</button>
+          </form>
         </div>
       </div>
     </div>
@@ -128,10 +132,11 @@
   <script src="/bower_components/jquery/dist/jquery.js"></script>
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbower -->
-  <!-- endbuild -->
+  <!--endbuild -->
 
-  <!-- build:js scripts/main.js -->
-  <script src="scripts/main.js"></script>
+  <!--build:js scripts/ main.js-- >
+      <script src="scripts/main.js">
+  </script>
   <!-- endbuild -->
 </body>
 
